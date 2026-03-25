@@ -37,6 +37,18 @@ This project demonstrates an end-to-end data analysis workflow by combining SQL 
 - Sales trends vary across months
 - Repeat customers play important role in revenue generation
 
+## 🔄 ETL Process
+- Extracted data from MySQL database using SQL queries
+- Transformed data using Pandas for analysis and feature engineering
+- Loaded processed insights for visualization and reporting
+
+├── sql/            # SQL queries used for extraction
+
+## 🧠 Why SQL + Pandas?
+- SQL is used for efficient data extraction and aggregation from database
+- Pandas is used for advanced analysis, transformation, and visualization
+- This combination reflects real-world data analysis workflows
+
 ## 📸 Visualizations
 
 ### Monthly Sales Trend

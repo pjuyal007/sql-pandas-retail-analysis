@@ -42,7 +42,6 @@ This project demonstrates an end-to-end data analysis workflow by combining SQL 
 - Transformed data using Pandas for analysis and feature engineering
 - Loaded processed insights for visualization and reporting
 
-sql          # SQL queries used for extraction
 
 ## 🧠 Why SQL + Pandas?
 - SQL is used for efficient data extraction and aggregation from database

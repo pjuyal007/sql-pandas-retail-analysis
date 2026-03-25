@@ -1,1 +1,36 @@
+-- High sales transactions
+SELECT * 
+FROM superstore
+WHERE sales > 1000;
 
+-- Sales by category
+SELECT category, SUM(sales) AS total_sales
+FROM superstore
+GROUP BY category;
+
+-- Top customers
+SELECT customer_name, SUM(sales) AS total_sales
+FROM superstore
+GROUP BY customer_name
+ORDER BY total_sales DESC
+LIMIT 10;
+
+-- Monthly sales trend
+SELECT DATE_FORMAT(order_date, '%Y-%m') AS month,
+       SUM(sales) AS total_sales
+FROM superstore
+GROUP BY month
+ORDER BY month;
+
+-- Profit analysis
+SELECT category, SUM(profit) AS total_profit
+FROM superstore
+GROUP BY category;
+
+-- Loss making products
+SELECT product_name, SUM(profit) AS total_loss
+FROM superstore
+GROUP BY product_name
+HAVING total_loss < 0
+ORDER BY total_loss ASC
+LIMIT 10;
